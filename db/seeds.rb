@@ -8,10 +8,19 @@
 
 require 'faker'
 
-User.destroy_all
+Doctor.destroy_all
+Patient.destroy_all
+Appointement.destroy_all
+
 
 10.times do
   doctor = Doctor.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, specialty: Faker::Job.field, postal_code: Faker::Address.postcode)
+end
+
+10.times do
   patient = Patient.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
-  appointement = Appointement.create!(date: Faker::Time.between(DateTime.now - 1, DateTime.now))
+end
+
+10.times do
+  appointement = Appointement.create!(date: Faker::Time.between(DateTime.now - 1, DateTime.now), doctor_id: Faker::Number.between(Doctor.first.id, Doctor.last.id), patient_id: Faker::Number.between(Patient.first.id, Patient.last.id))
 end

@@ -12,10 +12,14 @@
 
 # TEAM
 
-| Nom    |Prenom    |
-| ------ |:--------:|
-| REAU   | Alexis   |
-| PINTO  | Florian  |
+| Nom      | Prenom        |
+| -------- |:-------------:|
+| REAU     | Alexis        |
+| PINTO    | Florian       |
+| AVRONSAT | Cyril         |
+| RICHAUD  | Vivien        |
+| Prisil   |de la Tour     |
+| Louis    | Martin du Nord|
 
 # EXPLICATION
 

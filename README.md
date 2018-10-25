@@ -6,6 +6,8 @@
 
 * Faite un git clone: `https://github.com/Alexisreau97/Plateforme-de-reservations-de-docteurs`
 * Faite un `bundle install`
+* Faite un `rails db:seed` pour générer les doctors, patients et appointements.
+* Si le terminal vous demande de tapper `rails db:migrate` avant la commande `rails db:seed`, faite le ;)
 * Et c'est partie pour la correction !
 
 # TEAM
